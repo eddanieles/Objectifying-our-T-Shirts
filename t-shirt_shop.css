@@ -1,0 +1,202 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+
+
+.columns {
+//  border: 1px solid red; /* border */
+  width: 30%;
+  min-width: 300px;
+  min-height: 325px;
+}
+
+/* start of shirt */
+
+.shirt {
+  display: flex;
+}
+
+.shirt i {
+  position: relative;
+  margin-left: -22px;
+  height: 10%;
+}
+
+.shirt i:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+.fa-undo {
+  color: lightblue;
+  border: 2px solid lightblue;
+  border-top: none;
+  border-right: none;
+  padding: 3px;
+}
+
+.shirt_box img {
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* start of shirt box */
+
+.shirt_box {
+  border: 2px solid lightblue; /* border */
+  margin: 5px;
+}
+
+/* start of menu */
+.wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  padding-left: 0px;
+  margin: 0;
+}
+
+.menu > li {
+  position: relative;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  border: 2px solid lightblue; /*border for menu icon*/
+  border-bottom: none;
+  border-right: none;
+}
+
+
+li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: lightblue;
+  text-align: center;
+  list-style-type: none;
+  transition: width 2s, color 2s; /*example transition, width not working timing is off */
+
+}
+
+li:hover {
+  background-color: lightblue;
+  color: white;  /*example transition */
+  width: 100px; /*example transition */
+
+}
+
+.submenu {
+  position: absolute;
+  padding-left: 0px;
+  list-style-type: none;
+  display: none;
+  width: 110%;
+  border: 2px solid lightblue;
+  transition: transform 10s; /* not working, timing is off */
+  bottom: 40px; /*moves submenu up*/
+}
+
+.menu li:hover .submenu {
+  display: flex;
+  flex-direction: column-reverse;
+  transform: translate(0px, 12px);
+
+}
+
+.submenu li {
+  width: 100%;
+}
+
+/* start of shirt box*/
+
+.shirt_submenu {
+
+}
+
+.shirt_size {
+  margin: auto;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* below is replaced with inline styling
+
+.small_shirt {
+  width: 20%;
+}
+.medium_shirt {
+  width: 30%;
+}
+.large_shirt {
+  width: 40%;
+}
+.xlarge_shirt {
+  width: 50%;
+}
+
+*/
+
+/* start of square box*/
+.row {
+  display: flex;
+  padding: 0;
+}
+
+.row li {
+  flex: 1 1 0;
+//  margin: 5px;
+}
+
+.blue_square {
+  color: skyblue;
+}
+
+.pink_square {
+  color: pink;
+}
+
+.yellow_square {
+  color: yellow;
+}
+
+.green_square {
+  color: lightgreen;
+}
+
+
+
+/* start of name and price section */
+
+.nameandprice {
+//  border: 1px solid green; /* border */
+  margin: 10px 5px 5px 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  color: skyblue;
+  font-size: 125%;
+  list-style-type: none;
+  pointer-events: none;
+}
+
+.name {
+  flex: 2 1 0;
+  text-align: left;
+}
+
+.price {
+  flex: 1 1 0;
+  font-weight: bold;
+  text-align: right;
+}
