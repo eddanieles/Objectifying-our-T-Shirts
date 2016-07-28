@@ -200,3 +200,34 @@ li:hover {
   font-weight: bold;
   text-align: right;
 }
+
+/* Start of Cart Section */
+section p {
+  font-size: 400%;
+  font-family: cursive;
+  color: lightgray;
+  margin: 0px;
+}
+
+#cart_list {
+  margin: 0px;
+}
+
+#cart_list li {
+  color: blue;
+  font-family: cursive;
+  pointer-events: none;
+}
+
+form p {
+  font-family: cursive;
+  font-size: 400%;
+  color: lightgray;
+  margin: 0px;
+
+}
+
+#totalprice {
+  color: blue;
+  font-family: serif;
+}

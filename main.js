@@ -12,13 +12,19 @@ addToCart.addEventListener("click", function(event){
 
   var item = document.createElement("li");
   item.innerText = blueShirtObject.name;
-  
+
   var list = document.querySelector("#cart_list");
   list.appendChild(item);
 
   var item2 = document.createElement("li");
   item2.innerText = blueShirtObject.price;
   list.appendChild(item2);
+
+  var now = new Date ();
+  blueShirtObject.timeAdded = now;
+  var item3 = document.createElement("li");
+  item3.innerText = now;
+  list.appendChild(item3);
 
   var totalprice = 0;
 
@@ -29,15 +35,13 @@ addToCart.addEventListener("click", function(event){
   var total = document.querySelector("#totalprice");
   total.innerText = totalprice;
 
-  console.log(cartArray);
 })
 
 
 
 var checkout = document.querySelector("#b_total");
-
 checkout.addEventListener("click", function(event){
-
+    var confirm = window.confirm("Please Confirm Your Purchase");
 })
 
 
